@@ -34,11 +34,7 @@ This project is a curated set of system-level `setprop` flags to permanently unl
 
 > Works via **EngineerMode Shell** (no root / no bootloader unlock required)
 
-1. **Open EngineerMode Shell** on your device.  
-   On Realme devices, you can dial:
-
-
-Then go to `Engineer Mode > Software > Shell`.
+1. **Open EngineerMode Shell** on your device.
 
 2. **Paste & execute** the content of one of the following scripts:
 
