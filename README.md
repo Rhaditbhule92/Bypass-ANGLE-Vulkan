@@ -131,13 +131,25 @@ This method is **rootless and clean**. It uses a **hidden-but-legit entrypoint**
 
 ### EngineerMode Highlights:
 
-- Available on many Realme / Unisoc devices
-- Runs `setprop` system calls in privileged mode
-- No root, no Magisk, no unlocked bootloader
-- Persists across reboots
-- Ideal for Android Go & locked devices
+- Available on many Realme / Unisoc devices  
+- Runs `setprop` system calls in privileged mode  
+- No root, no Magisk, no unlocked bootloader  
+- Persists across reboots  
+- Ideal for Android Go & locked devices  
 
-We simply **optimize what already exists** — unlocking full hardware acceleration that was silently restricted.
+### What's Happening Under the Hood
+
+We optimize Android system behavior using low-level `persist.sys.*` properties such as:
+
+- Forcing ANGLE to use the **Vulkan backend**
+- Accelerating **HWUI**, **SkiaRenderer**, and **WebView rendering**
+- Injecting support for advanced **Vulkan extensions** like `VK_KHR_*`
+- Disabling **thermal throttling** and **watchdog timers**, giving full access to CPU & GPU under load
+- Forcing **GPU composition**, zero-copy, and raster pipelines for ultra-smooth scrolling and rendering
+
+> By disabling thermal and watchdog services, this setup ensures your device can deliver full performance without hidden system restrictions — especially important for sustained Vulkan rendering in Chrome/WebView.
+
+This isn’t a hack — it’s a smart use of native debugging interfaces that already exist in your phone. We simply unlock what the device is capable of.
 
 ---
 
@@ -153,3 +165,6 @@ We simply **optimize what already exists** — unlocking full hardware accelerat
 
 Licensed under the [MIT License](LICENSE).  
 Crafted for developers, tinkerers, and Android power users.
+
+
+---
