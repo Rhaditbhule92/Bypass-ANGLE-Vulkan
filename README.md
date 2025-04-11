@@ -1,28 +1,77 @@
-Bypass ANGLE Vulkan
+<p align="center">
+  <img src="bypass-angle-vulkan-preview.png" alt="Bypass ANGLE Vulkan Preview"/>
+</p>
+
+<h1 align="center">Bypass ANGLE Vulkan</h1>
 
 <p align="center">
-  <img src="bypass-angle-vulkan-preview.png" alt="Bypass ANGLE Vulkan Preview" width="90%">
+  <b>Unlock Full ANGLE + Vulkan GPU Rendering on Android — No Root, Safe, and Blazing Fast.</b>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ANGLE-Vulkan-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/EngineerMode-Compatible-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/No%20Root-Required-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Thermal-Watchdog_disabled-red?style=for-the-badge"/>
+</p>
+
 ---
 
-Built for
+## Features
 
-Custom ROM developers, kernel tweakers, power users, Vulkan enthusiasts — anyone who wants full control over GPU rendering pipelines on Android devices without root or Magisk.
+- **System-wide ANGLE Vulkan backend** activation  
+- **GPU-rendered UI** with HWUI + Skia tuning  
+- **Vulkan-accelerated WebView & Chrome** support  
+- **Thermal & Watchdog bypass** for stress testing  
+- **CPU & Network optimizations** for smooth performance  
+- **Safe on locked bootloader**, no root or PC required  
+
+---
+
+## Requirements
+
+- Android 13 or newer  
+- ADB shell access or EngineerMode terminal  
+- Device with **Vulkan & ANGLE** support (tested: Unisoc, Snapdragon, MediaTek)
+
+---
+
+## How to Use
+
+```bash
+git clone https://github.com/Rhaditbhule92/Bypass-ANGLE-Vulkan.git
+cd Bypass-ANGLE-Vulkan
+chmod +x Apply_Setprop_Script.sh
+sh Apply_Setprop_Script.sh
+
+> Reboot your device manually after script finishes.
+
+
 
 
 ---
 
-Features
+Terminal Preview
 
-Force-enable ANGLE with Vulkan backend
+===============================
+||  BYPASS ANGLE VULKAN MODE ||
+||  Vulkan + ANGLE + GPU Acceleration
+||  EngineerMode Safe Script
+[*] Applying GPU / UI / WebView Tweaks...
+===============================
 
-Bypass default OpenGL-to-GLES mapping
 
-System-wide persist.sys.* setprop configuration
+---
 
-Full optimization of HWUI, WebView, GPU, CPU, and thermal tuning
+Built For
 
-No root / no bootloader unlock required
+Android Performance Tweakers
+
+Custom ROM Developers
+
+Vulkan/ANGLE Enthusiasts
+
+Non-root Power Users
 
 
 
@@ -30,41 +79,15 @@ No root / no bootloader unlock required
 
 Tech Stack
 
-ANGLE Vulkan backend via setprop
+setprop system-level property injection
 
-WebView hardware acceleration with Vulkan override
+Android Shell (sh)
 
-Thermal & Watchdog bypass
+EngineerMode compatible scripting
 
-Persistent system props injection through EngineerMode access
+ANGLE + Skia + HWUI tuning
 
-Realme C33 (Unisoc T612) as primary testbed
-
-
-
----
-
-Highlights
-
-Minimalist, non-invasive setup
-
-Extreme performance mode for stress testing
-
-System-level property sync for maximum rendering performance
-
-Optimized for long-term daily driver usage
-
-
-
----
-
-Notes
-
-Best paired with Chrome Dev (WebView client)
-
-Ensure WebView & ANGLE flags are properly set
-
-Backup build.prop or persist settings if experimenting
+WebView & Chrome GPU rendering enablement
 
 
 
@@ -72,10 +95,14 @@ Backup build.prop or persist settings if experimenting
 
 License
 
-MIT — feel free to fork, improve, or remix
+Licensed under the MIT License.
 
 
 ---
 
-Made with passion for performance and precision.
+Credits
 
+Crafted by a performance-obsessed Android user.
+Inspired by real-world testing and deep system profiling.
+
+---
