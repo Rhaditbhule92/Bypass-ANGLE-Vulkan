@@ -20,51 +20,56 @@
 
 ## What is This?
 
-> **Bypass ANGLE Vulkan** is a full system `setprop` activation project to unlock **Vulkan backend rendering** on devices with ANGLE restrictions.  
-> Works with **Chrome Dev**, **Android WebView**, and system apps — all without root or bootloader unlock.
+> **Bypass ANGLE Vulkan** is a fully engineered system modification using `setprop` to unlock **Vulkan backend rendering** on low-end Android devices with ANGLE restrictions — **without root, bootloader unlock, or PC tools**.
+
+Designed to push entry-level hardware beyond its limits using **clean, permanent property injection via EngineerMode shell**.
 
 ---
 
-## Device & System Tested On
+## Tested Device
 
-- **Realme C33** (Unisoc T612)
-- **Android 13 Go Edition**
-- **No root / No bootloader unlock**
-- Fully tested with:
-  - Chrome Dev *(with ANGLE Vulkan)*
-  - Android System WebView *(with ANGLE Vulkan backend)*
+- **Realme C33**
+  - Unisoc Tiger T612 (8-core)
+  - Mali-G57 GPU
+  - 2GB RAM + 2GB Extended
+  - Android 13 Go Edition
+  - *No root / No bootloader unlock / No ADB*
+
+Successfully tested with:
+- **Chrome Dev** — Vulkan via ANGLE backend
+- **Android System WebView** — Vulkan rendering active
+- System UI & HWUI — Fully GPU-accelerated
 
 ---
 
 ## Features
 
-- ANGLE & Skia Vulkan rendering boost
-- GPU Hardware acceleration flags
-- Thermal + watchdog bypass for sustained performance
-- Works via EngineerMode shell
-- Totally **safe & reversible**
+- Full **ANGLE Vulkan** backend activation
+- Force-enable **Skia & HWUI GPU** rendering
+- Boost **WebView** and **Chrome Dev** to Vulkan mode
+- Bypass **thermal & watchdog limits**
+- Inject **Vulkan extensions (VK_KHR_*)** for extra compatibility
+- Safe, fast, and **permanent until manually cleared**
 
 ---
 
 ## How to Use
 
-> You need to run this from **EngineerMode Shell** (not normal `adb shell`).
+> Requires access to **EngineerMode Shell**. You must run this in a privileged shell, not from normal apps or terminal emulators.
 
-### Step-by-step:
+1. Launch **EngineerMode Shell** on your device  
+   (Check your Realme / Unisoc variant for how to access)
 
-1. Open **EngineerMode Shell** on your Realme or Unisoc device.
-   - Usually accessible via dialpad:
-     ```
-     *#800#
-     ```
-     Then go to:  
-     `Engineer Mode > Software > Shell`
+2. Paste and run one of these:
 
-2. Paste & execute one of these scripts:
-   - [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh) — *Full + Extended flags*
-   - [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh) — *Safe minimal set*
+- [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh)  
+  *Complete unlock — all flags, Vulkan extensions, thermal bypass*
 
-3. Reboot your phone to apply all props.
+- [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh)  
+  *Minimal stable config — basic Vulkan + ANGLE enablement*
+
+3. Reboot your phone  
+   Your device is now running with full GPU-accelerated Vulkan rendering.
 
 ---
 
@@ -76,4 +81,5 @@
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).  
+Made for Android tinkerers, developers, and GPU unlockers.
