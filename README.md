@@ -22,7 +22,7 @@
 
 > **Bypass ANGLE Vulkan** is a fully engineered system modification using `setprop` to unlock **Vulkan backend rendering** on low-end Android devices with ANGLE restrictions — **without root, bootloader unlock, or PC tools**.
 
-Designed to push entry-level hardware beyond its limits using **clean, permanent property injection via EngineerMode shell**.
+Designed to unleash full GPU acceleration using a clean, native approach via **EngineerMode shell**, safely bypassing Android Go limitations.
 
 ---
 
@@ -35,51 +35,121 @@ Designed to push entry-level hardware beyond its limits using **clean, permanent
   - Android 13 Go Edition
   - *No root / No bootloader unlock / No ADB*
 
-Successfully tested with:
-- **Chrome Dev** — Vulkan via ANGLE backend
-- **Android System WebView** — Vulkan rendering active
-- System UI & HWUI — Fully GPU-accelerated
+Confirmed working with:
+- **Chrome Dev** — ANGLE Vulkan backend
+- **Android System WebView** — Vulkan path active
+- **System UI & HWUI** — GPU-accelerated rendering
 
 ---
 
 ## Features
 
-- Full **ANGLE Vulkan** backend activation
-- Force-enable **Skia & HWUI GPU** rendering
-- Boost **WebView** and **Chrome Dev** to Vulkan mode
-- Bypass **thermal & watchdog limits**
-- Inject **Vulkan extensions (VK_KHR_*)** for extra compatibility
-- Safe, fast, and **permanent until manually cleared**
+- Unlock **ANGLE Vulkan** backend
+- Force-enable **SkiaRenderer**, **HWUI GPU**, and GPU composition
+- Accelerate **WebView** and **Chrome Dev** via Vulkan
+- Disable **thermal throttling** & **watchdog timers**
+- Inject advanced **Vulkan extensions (VK_KHR_*)**
+- Clean, safe, **persistent system-level method** — no root needed
 
 ---
 
 ## How to Use
 
-> Requires access to **EngineerMode Shell**. You must run this in a privileged shell, not from normal apps or terminal emulators.
+> You’ll need access to **EngineerMode Shell** — a native factory test shell on Realme / Unisoc devices.
 
-1. Launch **EngineerMode Shell** on your device  
-   (Check your Realme / Unisoc variant for how to access)
+### Steps:
 
-2. Paste and run one of these:
+1. Launch **EngineerMode Shell**  
+   *(Search “EngineerMode” in Dialer or Settings — or use device-specific methods)*
+
+2. Paste and run one of these scripts:
 
 - [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh)  
-  *Complete unlock — all flags, Vulkan extensions, thermal bypass*
+  *Full Vulkan unlock + Skia + thermal & watchdog override*
 
 - [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh)  
-  *Minimal stable config — basic Vulkan + ANGLE enablement*
+  *Lightweight version for stability and speed*
 
-3. Reboot your phone  
-   Your device is now running with full GPU-accelerated Vulkan rendering.
+3. Reboot your device  
+   You are now running with full ANGLE Vulkan GPU acceleration.
+
+---
+
+## Chrome Dev Flags (Maximize Performance)
+
+To take full advantage of Vulkan in Chrome Dev, you must enable specific **flags**.  
+Here’s the complete guide for best experience:
+
+### How to Enable Flags:
+
+1. Open **Chrome Dev**
+2. Go to address bar, type:
+
+chrome://flags
+
+3. Use the search bar to find and **enable** the following:
+
+| Flag | Recommended Setting |
+|------|---------------------|
+| `#enable-unsafe-webgpu` | Enabled |
+| `#ignore-gpu-blocklist` | Enabled |
+| `#use-vulkan` | Enabled |
+| `#use-angle` | Vulkan |
+| `#enable-zero-copy` | Enabled |
+| `#enable-gpu-rasterization` | Enabled |
+| `#enable-oop-rasterization` | Enabled |
+| `#enable-skia-benchmarking` | Enabled |
+| `#skia-graphite` | Enabled (if available) |
+| `#smooth-scrolling` | Enabled ← **Don’t miss this!** |
+
+4. After enabling all flags, tap **Relaunch** when Chrome prompts you.
+
+---
+
+## Verify: Is Vulkan Working?
+
+After relaunching, go to:
+
+chrome://gpu
+
+Look for the following confirmations:
+
+- **Graphics Backend**: Vulkan  
+- **ANGLE Backend**: Vulkan  
+- **Skia Renderer**: Vulkan  
+- **Compositing**: GPU Accelerated  
+- **Rasterization**: Hardware Accelerated  
+- **Smooth Scrolling**: Enabled  
+
+> If everything matches — congrats! Your system is now running with full GPU rendering powered by ANGLE + Vulkan.
+
+---
+
+## Behind the Scenes
+
+This method is **rootless and clean**. It uses a **hidden-but-legit entrypoint**: EngineerMode Shell.
+
+### EngineerMode Highlights:
+
+- Available on many Realme / Unisoc devices
+- Runs `setprop` system calls in privileged mode
+- No root, no Magisk, no unlocked bootloader
+- Persists across reboots
+- Ideal for Android Go & locked devices
+
+We simply **optimize what already exists** — unlocking full hardware acceleration that was silently restricted.
 
 ---
 
 ## Preview
 
-![Bypass ANGLE Vulkan Demo](bypass-angle-vulkan-preview.png)
+<p align="center">
+  <img src="bypass-angle-vulkan-preview.png" alt="Demo Vulkan Preview" width="100%">
+</p>
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).  
-Made for Android tinkerers, developers, and GPU unlockers.
+Licensed under the [MIT License](LICENSE).  
+Crafted for developers, tinkerers, and Android power users.
