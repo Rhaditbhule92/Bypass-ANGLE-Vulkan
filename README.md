@@ -1,62 +1,48 @@
-# Bypass-ANGLE-Vulkan
+# Bypass ANGLE Vulkan
 
-Bypass ANGLE Vulkan
-
-Bypass system-level GPU restrictions and unlock full Vulkan + ANGLE acceleration on Android
-Non-root, safe for EngineerMode, optimized for performance and smoothness.
-
+**Bypass system-level GPU restrictions** and unlock **full Vulkan + ANGLE acceleration** on Android.  
+**No root, no PC, fully safe via EngineerMode.**
 
 ---
 
-Features
+## Features
 
-ANGLE Vulkan backend activation system-wide
-
-GPU-rendered UI with HWUI + Skia tuning
-
-Vulkan-accelerated WebView & Chrome support
-
-Thermal + watchdog bypass for stress testing
-
-CPU & network optimization for smoother app usage
-
-No root, bootloader, or PC required (EngineerMode supported)
-
-
+- **Activate ANGLE Vulkan backend** system-wide  
+- **GPU-accelerated UI** (HWUI + Skia tuning)  
+- **Force Vulkan on WebView & Chrome**  
+- **Bypass thermal throttling & watchdogs**  
+- **Boost CPU & LTE performance**  
+- **100% non-root, bootloader-locked friendly**
 
 ---
 
-Requirements
+## Requirements
 
-Android 13 or newer
-
-ADB shell access or EngineerMode terminal
-
-Device with Vulkan & ANGLE support (Unisoc, Snapdragon, MediaTek tested)
-
-
+- Android **13+**
+- **EngineerMode** terminal or **ADB shell** access
+- Device with **ANGLE + Vulkan** support  
+  *(Tested on Unisoc, Snapdragon, MediaTek)*
 
 ---
 
-How to Use
+## Usage
 
-1. Clone or download this repo:
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/Rhaditbhule92/Bypass-ANGLE-Vulkan.git
+   cd Bypass-ANGLE-Vulkan
 
-git clone https://github.com/Rhaditbhule92/Bypass-Angle-Vulkan.git
-cd Bypass-Angle-Vulkan
-
-
-2. Make the script executable:
+2. Make script executable:
 
 chmod +x Apply_Setprop_Script.sh
 
 
-3. Run via ADB shell or terminal:
+3. Run the script:
 
 sh Apply_Setprop_Script.sh
 
 
-4. Reboot your device manually after script is done.
+4. Reboot your device after script finishes.
 
 
 
@@ -66,29 +52,32 @@ sh Apply_Setprop_Script.sh
 Terminal Preview
 
 ============================================
-||        BYPASS ANGLE VULKAN MODE         ||
-||     Vulkan + ANGLE + GPU Acceleration   ||
-||         EngineerMode Safe Script        ||
+||     BYPASS ANGLE VULKAN MODE          ||
+||  Vulkan + ANGLE + GPU Acceleration    ||
+||        EngineerMode Safe Script       ||
 ============================================
+
 [*] Applying GPU / UI / WebView Tweaks...
- > ANGLE Vulkan Core Activated
- > WebView + Chrome Vulkan Forced
- > HWUI Rendering: GPU Vulkan Path
- > Thermal & Watchdog: Disabled
- > CPU + LTE Performance Tuned
-[✓] All system properties applied.
->> Please reboot device to complete activation <<
+
+✓ ANGLE Vulkan Core Activated  
+✓ WebView + Chrome Vulkan Forced  
+✓ HWUI Rendering: GPU Vulkan Path  
+✓ Thermal & Watchdog: Disabled  
+✓ CPU + LTE Performance Tuned
+
+Please reboot device to complete activation <<
 
 
 ---
 
 License
 
-Licensed under the MIT License.
+MIT License
 
 
 ---
 
 Credits
 
-Crafted by a performance-obsessed Android power user. Inspired by low-level GPU experimentation and the desire to fully unleash Vulkan + ANGLE on non-rooted devices.
+Crafted by a performance-obsessed Android power user.
+Inspired by low-level GPU experimentation and the desire to fully unleash Vulkan + ANGLE on non-rooted Android devices.
