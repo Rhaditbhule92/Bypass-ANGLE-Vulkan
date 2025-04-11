@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="WALLPAPER_DARCK_RED.jpeg" alt="Dark Mode Preview" style="border-radius: 12px; max-width: 100%;">
+</p>
+
 p align="center">
   <img src="https://raw.githubusercontent.com/Rhaditbhule92/Bypass-ANGLE-Vulkan/main/.assets/darkmode_preview.png" alt="Preview" width="100%" />
 </p>
