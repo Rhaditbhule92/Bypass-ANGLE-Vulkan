@@ -48,3 +48,18 @@ This project is a curated set of system-level `setprop` flags to permanently unl
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+---
+
+## Topics
+
+![angle](https://img.shields.io/badge/ANGLE-GPU%20Bridge-0d1117?style=flat-square&logo=angle&logoColor=white)
+![vulkan](https://img.shields.io/badge/Vulkan-Backend-FB503B?style=flat-square&logo=vulkan&logoColor=white)
+![gpu-acceleration](https://img.shields.io/badge/GPU--Acceleration-Enabled-5e9eff?style=flat-square&logo=nvidia&logoColor=white)
+![android](https://img.shields.io/badge/Android-Go%20Edition-3DDC84?style=flat-square&logo=android&logoColor=white)
+![setprop](https://img.shields.io/badge/Setprop-System%20Flags-FFB300?style=flat-square&logo=gear&logoColor=white)
+![realme](https://img.shields.io/badge/Realme-C33%20T612-FFD500?style=flat-square&logo=realme&logoColor=black)
+![webview](https://img.shields.io/badge/WebView-Vulkan%20Activated-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
+![chrome](https://img.shields.io/badge/Chrome%20Dev-Vulkan%20Enabled-0F9D58?style=flat-square&logo=google-chrome&logoColor=white)
