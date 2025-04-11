@@ -1,65 +1,79 @@
-![Bypass ANGLE Vulkan Preview](bypass-angle-vulkan-preview.png)
+<p align="center">
+  <img src="bypass-angle-vulkan-preview.png" alt="Bypass ANGLE Vulkan Preview" style="border-radius: 8px;">
+</p>
 
-# Bypass ANGLE Vulkan
+<h1 align="center">Bypass ANGLE Vulkan</h1>
+<p align="center"><b>Unlock Full ANGLE + Vulkan GPU Rendering on Android — No Root, Safe, and Blazing Fast</b></p>
 
-Unlock Full ANGLE + Vulkan GPU Rendering on Android — No Root, Safe, and Blazing Fast.
-
----
-
-## Bypass ANGLE Vulkan on Android WebView & Chrome Dev
-
-**Unleash the raw power of Vulkan backend on devices with ANGLE restrictions.**  
-This project is a curated set of system-level `setprop` flags to permanently unlock Vulkan acceleration across Chrome Dev, WebView, and system apps — all without root or Magisk.
-
----
-
-## Built For:
-
-- Realme C33 (Unisoc T612)  
-- Android 13 Go Edition  
-- No root / No bootloader unlock  
-- Tested with Chrome Dev + Android WebView (Vulkan)  
+<p align="center">
+  <img alt="Topic: angle" src="https://img.shields.io/badge/topic-angle-blue?style=flat-square">
+  <img alt="Topic: vulkan" src="https://img.shields.io/badge/topic-vulkan-red?style=flat-square">
+  <img alt="Topic: gpu-acceleration" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
+  <img alt="Topic: android" src="https://img.shields.io/badge/topic-android-yellow?style=flat-square">
+  <img alt="Topic: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
+  <img alt="Topic: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
+  <img alt="Topic: webview" src="https://img.shields.io/badge/topic-webview-blueviolet?style=flat-square">
+  <img alt="Topic: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square">
+</p>
 
 ---
 
-## Tech Stack & Method:
+## What is This?
 
-- `persist.sys.*` property injection via **EngineerMode shell** (not `adb shell`)  
-- ANGLE & Skia optimization (`anglefeatures`, `gpu`, `renderer`, `vulkan`)  
-- HWUI, thermal, and watchdog bypass (`persist.sys.thermal.*`, `persist.sys.watchdog.*`)  
+> **Bypass ANGLE Vulkan** is a full system `setprop` activation project to unlock **Vulkan backend rendering** on devices with ANGLE restrictions.  
+> Works with **Chrome Dev**, **Android WebView**, and system apps — all without root or bootloader unlock.
+
+---
+
+## Device & System Tested On
+
+- **Realme C33** (Unisoc T612)
+- **Android 13 Go Edition**
+- **No root / No bootloader unlock**
+- Fully tested with:
+  - Chrome Dev *(with ANGLE Vulkan)*
+  - Android System WebView *(with ANGLE Vulkan backend)*
+
+---
+
+## Features
+
+- ANGLE & Skia Vulkan rendering boost
+- GPU Hardware acceleration flags
+- Thermal + watchdog bypass for sustained performance
+- Works via EngineerMode shell
+- Totally **safe & reversible**
 
 ---
 
 ## How to Use
 
-> Works via **EngineerMode Shell** (no root / no bootloader unlock required)
+> You need to run this from **EngineerMode Shell** (not normal `adb shell`).
 
-1. **Open EngineerMode Shell** on your device.
+### Step-by-step:
 
-2. **Paste & execute** the content of one of the following scripts:
+1. Open **EngineerMode Shell** on your Realme or Unisoc device.
+   - Usually accessible via dialpad:
+     ```
+     *#800#
+     ```
+     Then go to:  
+     `Engineer Mode > Software > Shell`
 
-- [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh) *(Full + Extended flags)*
-- [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh) *(Minimal + Safe set)*
+2. Paste & execute one of these scripts:
+   - [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh) — *Full + Extended flags*
+   - [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh) — *Safe minimal set*
 
-3. **Reboot** the device to apply all system-level `setprop` flags.
+3. Reboot your phone to apply all props.
+
+---
+
+## Preview
+
+![Bypass ANGLE Vulkan Demo](bypass-angle-vulkan-preview.png)
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
----
-
-## Topics
-
-![angle](https://img.shields.io/badge/ANGLE-GPU%20Bridge-0d1117?style=flat-square&logo=angle&logoColor=white)
-![vulkan](https://img.shields.io/badge/Vulkan-Backend-FB503B?style=flat-square&logo=vulkan&logoColor=white)
-![gpu-acceleration](https://img.shields.io/badge/GPU--Acceleration-Enabled-5e9eff?style=flat-square&logo=nvidia&logoColor=white)
-![android](https://img.shields.io/badge/Android-Go%20Edition-3DDC84?style=flat-square&logo=android&logoColor=white)
-![setprop](https://img.shields.io/badge/Setprop-System%20Flags-FFB300?style=flat-square&logo=gear&logoColor=white)
-![realme](https://img.shields.io/badge/Realme-C33%20T612-FFD500?style=flat-square&logo=realme&logoColor=black)
-![webview](https://img.shields.io/badge/WebView-Vulkan%20Activated-4285F4?style=flat-square&logo=google-chrome&logoColor=white)
-![chrome](https://img.shields.io/badge/Chrome%20Dev-Vulkan%20Enabled-0F9D58?style=flat-square&logo=google-chrome&logoColor=white)
