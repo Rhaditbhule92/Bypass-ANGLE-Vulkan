@@ -125,13 +125,6 @@ Look for the following confirmations:
 
 ---
 
-## Demo Video
-
-**[▶️ Click here to watch the full demo video on GoFile](https://gofile.io/d/fQt9yh)**  
-*Real-time test with Vulkan backend, HWUI GPU, and Chrome Dev — no root, fully native method.*
-
----
-
 ## Behind the Scenes
 
 This method is **rootless and clean**. It uses a **hidden-but-legit entrypoint**: EngineerMode Shell.
@@ -157,6 +150,14 @@ We optimize Android system behavior using low-level `persist.sys.*` properties s
 > By disabling thermal and watchdog services, this setup ensures your device can deliver full performance without hidden system restrictions — especially important for sustained Vulkan rendering in Chrome/WebView.
 
 This isn’t a hack — it’s a smart use of native debugging interfaces that already exist in your phone. We simply unlock what the device is capable of.
+
+---
+
+## Demo Video
+
+Want to see it in action?
+
+**[Click here to watch the demo video (GoFile)](https://gofile.io/d/fQt9yh)**
 
 ---
 
