@@ -157,23 +157,27 @@ This isn’t a hack — it’s a smart use of native debugging interfaces that a
 
 ---
 
-### Bonus: Built Without Root or Debugging — Even This GitHub Page
+## Technical Highlights
 
-Here’s a fun fact: this very GitHub repository — from the scripts to this `README.md` —  
-was built entirely from the **same device** running the Vulkan configuration.
+These are the key technical mechanisms behind this project:
 
-- No root  
-- No USB debugging  
-- No PC  
-- No ADB  
-- No bootloader unlock
+- **Vulkan backend override via `persist.sys.*`**  
+  Forces ANGLE, WebView, and Skia to use Vulkan regardless of device class or GPU blocklist.
 
-Just **Termux**, with access to `git`, `nano`, `curl`, and shell scripting — all working smoothly thanks to the performance state unlocked via `setprop`.
+- **System-level GPU rendering enforcement**  
+  Activates GPU composition, zero-copy rendering, and HWUI acceleration through clean system properties.
 
-> This is a 100% mobile-built project.  
-> From initial testing to documentation to `git push` — it all happened on-device, through Termux only.
+- **Thermal and watchdog bypass**  
+  Disables kernel-level CPU/GPU throttling and watchdog resets using `persist.sys.thermal.*` and `persist.sys.watchdog.*` — stable under sustained GPU load.
 
-This further proves how far you can push a locked Android Go device when you understand its native internals — no exploits needed.
+- **Advanced Vulkan extension injection**  
+  Injects Vulkan 1.1+ features like `VK_KHR_draw_indirect_count`, `VK_KHR_multiview`, `VK_EXT_subgroup_size_control`, etc., unlocking performance and compatibility on otherwise limited GPUs.
+
+- **ANGLE multi-backend sync**  
+  Enables dynamic fallback between OpenGL and Vulkan backends, useful for apps that partially support Vulkan.
+
+- **100% persistent and stealth**  
+  All changes survive reboots and remain hidden from UI, developer options, and standard debugging tools — yet fully active in the runtime system.
 
 ---
 
