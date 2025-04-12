@@ -153,9 +153,31 @@ This isn’t a hack — it’s a smart use of native debugging interfaces that a
 
 ---
 
+## Real-Time Sync Phenomenon
+
+One of the most mind-blowing side effects of this `setprop` configuration is the spontaneous **real-time sync behavior** between:
+
+- Internal storage (`/sdcard`)
+- Termux working directory
+- GitHub repository (via Git CLI in Termux)
+
+Without any user-triggered action, `git status` begins detecting changes as soon as a file is created, modified, or moved on the device. Even newly captured screenshots instantly register in Termux — sometimes without requiring a `git add`.
+
+**What makes this insane?**  
+This occurs without:
+
+- Root
+- ADB debugging
+- Bootloader unlock
+- Manual syncing tools (e.g. rsync or autosync apps)
+
+The behavior is most likely the result of file I/O observation layers being fully unlocked due to GPU/IO-focused `setprop` combinations and thread priority boosts. This can turn Android’s file system layer into something close to an **event-driven realtime Git tracker**, especially when Termux is active.
+
+---
+
 ## Demo Video
 
-You can watch the proof-of-concept demo here:
+You can watch the proof-of-concept demo here:  
 [https://gofile.io/d/fQt9yh](https://gofile.io/d/fQt9yh)
 
 ---
