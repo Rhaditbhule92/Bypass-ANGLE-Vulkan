@@ -17,7 +17,10 @@
   <img alt="Topic: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
   <img alt="Topic: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
   <img alt="Topic: webview" src="https://img.shields.io/badge/topic-webview-blueviolet?style=flat-square">
-  <img alt="Topic: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square">
+  <img alt="Topic: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square"><br>
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/luxdroid-id/bypass-angle-vulkan?style=flat-square">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/luxdroid-id/bypass-angle-vulkan?style=flat-square">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/luxdroid-id/bypass-angle-vulkan?style=flat-square">
 </p>
 
 ---
