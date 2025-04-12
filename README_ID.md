@@ -193,4 +193,7 @@ Tonton demo bukti konsep di sini:
 
 Lisensi di bawah [MIT License](LICENSE).  
 Dibuat untuk pengembang, opreker, dan pengguna tingkat lanjut Android.
+<<<<<<< HEAD
 0
+=======
+>>>>>>> 387c9dba174e91a9f8cfced814a2fd9d5942b04c
