@@ -127,8 +127,8 @@ Look for the following confirmations:
 
 ## Demo Video
 
-Want proof? Here’s a full screen recording showing Vulkan working in Chrome and WebView:  
-**[View Demo Video on GoFile](https://gofile.io/d/fQt9yh)**
+> **Real-time proof:** Vulkan + ANGLE backend running on Realme C33 (no root, no mods)  
+> [https://gofile.io/d/fQt9yh](https://gofile.io/d/fQt9yh)
 
 ---
 
