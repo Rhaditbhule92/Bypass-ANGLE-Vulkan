@@ -153,6 +153,26 @@ This isn’t a hack — it’s a smart use of native debugging interfaces that a
 
 ---
 
+### Bonus: Built Without Root or Debugging — Even This GitHub Page
+
+Here’s a fun fact: this very GitHub repository — from the scripts to this `README.md` —  
+was built entirely from the **same device** running the Vulkan configuration.
+
+- No root  
+- No USB debugging  
+- No PC  
+- No ADB  
+- No bootloader unlock
+
+Just **Termux**, with access to `git`, `nano`, `curl`, and shell scripting — all working smoothly thanks to the performance state unlocked via `setprop`.
+
+> This is a 100% mobile-built project.  
+> From initial testing to documentation to `git push` — it all happened on-device, through Termux only.
+
+This further proves how far you can push a locked Android Go device when you understand its native internals — no exploits needed.
+
+---
+
 ## Real-Time Sync Phenomenon
 
 One of the most mind-blowing side effects of this `setprop` configuration is the spontaneous **real-time sync behavior** between:
@@ -166,9 +186,9 @@ Without any user-triggered action, `git status` begins detecting changes as soon
 **What makes this insane?**  
 This occurs without:
 
-- Root
-- ADB debugging
-- Bootloader unlock
+- Root  
+- ADB debugging  
+- Bootloader unlock  
 - Manual syncing tools (e.g. rsync or autosync apps)
 
 The behavior is most likely the result of file I/O observation layers being fully unlocked due to GPU/IO-focused `setprop` combinations and thread priority boosts. This can turn Android’s file system layer into something close to an **event-driven realtime Git tracker**, especially when Termux is active.
