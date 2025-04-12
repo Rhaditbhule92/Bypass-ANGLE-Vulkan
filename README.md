@@ -125,6 +125,13 @@ Look for the following confirmations:
 
 ---
 
+## Demo Video
+
+**[▶️ Click here to watch the full demo video on GoFile](https://gofile.io/d/fQt9yh)**  
+*Real-time test with Vulkan backend, HWUI GPU, and Chrome Dev — no root, fully native method.*
+
+---
+
 ## Behind the Scenes
 
 This method is **rootless and clean**. It uses a **hidden-but-legit entrypoint**: EngineerMode Shell.
@@ -165,6 +172,3 @@ This isn’t a hack — it’s a smart use of native debugging interfaces that a
 
 Licensed under the [MIT License](LICENSE).  
 Crafted for developers, tinkerers, and Android power users.
-
-
----
