@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="README.md">🇬🇧 English</a> | <a href="README_ID.md">🇮🇩 Bahasa Indonesia</a>
+</p>
+
+<p align="center">
   <img src="bypass-angle-vulkan-preview.png" alt="Bypass ANGLE Vulkan Preview" style="border-radius: 8px;">
 </p>
 
