@@ -24,7 +24,7 @@ setprop persist.sys.angle.prefer_system_angle true
 setprop persist.sys.angle.support_non_angle_apps false
 setprop persist.sys.angle.egl_disable_context_virtualization false
 setprop persist.sys.angle.disable_swiftshader true
-setprop persist.sys.angle.feature_overrides_enabled "disable_dual_source_blending,disable_front_face_culling"
+setprop persist.sys.angle.feature_overrides_enabled "VulkanFromANGLE,VulkanUseD32S8,VulkanUseExplicitSync2,VulkanAsyncCommandBufferSubmission"
 setprop persist.sys.angle.vulkan.features.override dynamic_rendering,fragment_shading_rate,pipeline_robustness,robustness2,descriptor_indexing
 setprop persist.sys.angle.feature.override.force_enable_all true
 setprop persist.sys.angle.gpu.capture 0
