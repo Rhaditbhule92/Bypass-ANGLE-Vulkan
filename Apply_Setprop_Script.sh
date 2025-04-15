@@ -287,3 +287,5 @@ echo "============================================="
 echo " ANGLE + VULKAN PERFORMANCE BOOST APPLIED! "
 echo "     Reboot device for full effect.         "
 echo "============================================="
+0
+
