@@ -31,7 +31,6 @@ setprop persist.sys.angle.gpu.capture 0
 setprop persist.sys.game_driver.angle_all_apps true
 setprop persist.sys.graphics.renderer ANGLE
 setprop persist.sys.angle.vulkan true
-setprop persist.sys.angle.feature_overrides_enabled VulkanFromANGLE,VulkanUseD32S8,VulkanUseExplicitSync2,VulkanAsyncCommandBufferSubmission
 setprop persist.sys.angle.feature_overrides_disabled ForceRobustResourceInit,EmulatePrimitiveRestartFixedIndex,ForceInitShaderVariables
 setprop persist.sys.angle.feature.override.enableParallelCompileAndLink true
 setprop persist.sys.angle.feature.override.supportsPipelineCreationFeedback true
@@ -49,6 +48,15 @@ setprop persist.sys.gfx.angle.default_backend vulkan
 setprop persist.sys.gfx.angle.game_driver_all true
 setprop persist.sys.gfx.angle.gamemode 1
 setprop persist.sys.gfx.angle.gpu.bypass true
+setprop persist.sys.gpu.rendering true
+setprop persist.sys.gpu.favor_performance 1
+setprop persist.sys.vulkan.priority high
+setprop persist.sys.gpu.boost_level max
+setprop persist.sys.gpu.turbo_mode 1
+setprop persist.sys.angle.vulkan.debug_layers false
+setprop persist.sys.angle.vulkan.memory_optimization aggressive
+setprop persist.sys.angle.vulkan.renderloop async
+setprop persist.sys.angle.vulkan.swap_behavior fast
 
 # ANGLE Optimization & Debug
 echo "[2] ANGLE Optimization & Debug"
@@ -94,6 +102,11 @@ setprop persist.sys.gpu.benchmark_mode true
 setprop persist.sys.gpu.low_latency_mode true
 setprop persist.sys.gpu.allow_async_queue true
 setprop persist.sys.gpu.pipeline_cache_enabled true
+setprop persist.sys.force_highendgfx true
+setprop persist.sys.gpu.hardware_overdraw 0
+setprop persist.sys.ui.hw_deferred true
+setprop persist.sys.gpu.pipeline_flush aggressive
+setprop persist.sys.gpu.prefer_async_compilation 1
 
 # HWUI & Skia
 echo "[6] HWUI GPU Optimizations"
@@ -120,6 +133,8 @@ setprop persist.sys.thermal.data false
 setprop persist.sys.thermal.config false
 setprop persist.sys.thermal.status disable
 setprop persist.sys.thermal_event false
+setprop persist.sys.gpu.thermal_throttle off
+setprop persist.sys.gpu.dynamic_power_limit off
 setprop persist.sys.ignore_dexopt_thermal true
 setprop persist.sys.dalvik.dexopt.no_throttle true
 setprop persist.sys.dexopt.ignore_thermal true
@@ -163,6 +178,11 @@ setprop persist.sys.gfx.force_gpu true
 setprop persist.sys.gfx.render_mode performance
 setprop persist.sys.hwui.force_vulkan true
 setprop persist.sys.hwui.render_thread true
+setprop persist.sys.sf.enable_gl_backpressure 1
+setprop persist.sys.sf.latch_unsignaled 1
+setprop persist.sys.sf.use_phase_offsets_as_durations 1
+setprop persist.sys.sf.phase_offset_ns 750000
+setprop persist.sys.sf.present_time_offset_from_vsync_ns 1500000
 
 # WebView Boost
 echo "[11] WebView Boost + Bypass"
@@ -230,8 +250,29 @@ setprop persist.radio.network.mode 11
 setprop persist.radio.prefer.network 9
 setprop persist.vendor.radio.prefer.network 9
 
+# VoLTE & IMS Optimization
+echo "[16] VoLTE & IMS Optimization"
+setprop persist.radio.volte.enable true
+setprop persist.sys.cust.lte_config true
+setprop persist.vendor.radio.imssetting 1
+setprop persist.vendor.radio.jbims true
+setprop persist.vendor.radio.rat_on 1
+setprop persist.vendor.radio.data_ltd_sys_ind 1
+setprop persist.radio.calls.on.ims true
+setprop persist.radio.imsuseip 1
+
+# Video Call Support
+echo "[17] Video Call Support"
+setprop persist.sys.videocall.avail true
+setprop persist.vendor.radio.data_con_rprt 1
+
+# Network + Voice Quality Enhancer
+echo "[18] Network + Voice Quality Enhancer"
+setprop persist.radio.voice_on_lte true
+setprop persist.sys.telephony.vt_quality 1
+
 # Logging Cleanup
-echo "[16] Logging & Kernel Cleanup"
+echo "[19] Logging & Kernel Cleanup"
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"
 setprop persist.sys.powerhal.log.enabled 0
