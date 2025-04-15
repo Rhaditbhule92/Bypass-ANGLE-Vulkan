@@ -56,7 +56,7 @@ setprop persist.sys.angle.vulkan.swap_behavior fast
 setprop persist.sys.render.driver_angle_enabled true
 setprop persist.sys.gpu.angle.driver.boost 1
 setprop persist.sys.angle.render.direct true
-setprop persist.sys.angle.debug.perf true
+setprop persist.sys.angle.debug.perf false
 setprop persist.sys.vulkan.angle.compat 1
 
 # ANGLE Optimization & Debug
@@ -70,8 +70,8 @@ setprop persist.sys.angle.profiling_enabled true
 setprop persist.sys.angle.benchmark_mode true
 setprop persist.sys.angle.enable_validation false
 setprop persist.sys.angle.enable_validation_layers false
-setprop persist.sys.angle.debug_layer true
-setprop persist.sys.angle.enable_debug_layers true
+setprop persist.sys.angle.debug_layer false
+setprop persist.sys.angle.enable_debug_layers false
 
 # Extended ANGLE Activation
 setprop persist.sys.angle.use_angle true
@@ -175,8 +175,8 @@ setprop persist.sys.webview.optimized_rendering true
 setprop persist.sys.webview.enable_async_paint true
 setprop persist.sys.webview.enable_unlimited_cache true
 setprop persist.sys.webview.disable_sandbox true
-setprop persist.sys.webview.debug.enable true
-setprop persist.sys.webview.debug.level verbose
+setprop persist.sys.webview.debug.enable false
+setprop persist.sys.webview.debug.level none
 
 # Vulkan Extensions
 setprop persist.sys.vulkan.dynamic_rendering 1
