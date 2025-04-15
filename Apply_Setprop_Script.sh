@@ -250,7 +250,6 @@ setprop persist.radio.network.mode 11
 setprop persist.radio.prefer.network 9
 setprop persist.vendor.radio.prefer.network 9
 
-<<<<<<< HEAD
 # VoLTE & IMS Optimization
 echo "[16] VoLTE & IMS Optimization"
 setprop persist.radio.volte.enable true
@@ -273,11 +272,7 @@ setprop persist.radio.voice_on_lte true
 setprop persist.sys.telephony.vt_quality 1
 
 # Logging Cleanup
-echo "[19] Logging & Kernel Cleanup"
-=======
-# Logging Cleanup
 echo "[16] Logging & Kernel Cleanup"
->>>>>>> 992262fbdfdc797479e164eb8153fcfe7ef9b585
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"
 setprop persist.sys.powerhal.log.enabled 0

@@ -228,7 +228,6 @@ setprop persist.radio.network.mode 11
 setprop persist.radio.prefer.network 9
 setprop persist.vendor.radio.prefer.network 9
 
-<<<<<<< HEAD
 # VoLTE & IMS Optimization
 setprop persist.radio.volte.enable true
 setprop persist.sys.cust.lte_config true
@@ -247,8 +246,6 @@ setprop persist.vendor.radio.data_con_rprt 1
 setprop persist.radio.voice_on_lte true
 setprop persist.sys.telephony.vt_quality 1
 
-=======
->>>>>>> 992262fbdfdc797479e164eb8153fcfe7ef9b585
 # Logging Cleanup
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"

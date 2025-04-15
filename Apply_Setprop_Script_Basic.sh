@@ -230,7 +230,6 @@ setprop persist.radio.network.mode 11
 setprop persist.radio.prefer.network 9
 setprop persist.vendor.radio.prefer.network 9
 
-<<<<<<< HEAD
 # VoLTE & IMS Optimization
 setprop persist.radio.volte.enable true
 setprop persist.sys.cust.lte_config true
@@ -249,8 +248,6 @@ setprop persist.vendor.radio.data_con_rprt 1
 setprop persist.radio.voice_on_lte true
 setprop persist.sys.telephony.vt_quality 1
 
-=======
->>>>>>> 992262fbdfdc797479e164eb8153fcfe7ef9b585
 # Logging Cleanup
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"
@@ -259,8 +256,5 @@ setprop persist.sys.kernel_log_level 0
 setprop persist.sys.debug.level 0
 setprop persist.sys.zram.size 268435456
 setprop persist.sys.zram.disk_size 268435456
-<<<<<<< HEAD
 setprop persist.sys.bionic.reserved_cpu 1
-=======
 setprop persist.sys.bionic.reserved_cpu 1
->>>>>>> 992262fbdfdc797479e164eb8153fcfe7ef9b585
