@@ -272,7 +272,7 @@ setprop persist.radio.voice_on_lte true
 setprop persist.sys.telephony.vt_quality 1
 
 # Logging Cleanup
-echo "[16] Logging & Kernel Cleanup"
+echo "[19] Logging & Kernel Cleanup"
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"
 setprop persist.sys.powerhal.log.enabled 0
