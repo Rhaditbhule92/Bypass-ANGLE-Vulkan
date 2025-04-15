@@ -1,28 +1,35 @@
 <p align="center">
+  <a href="README_ID.md">🇮🇩 Bahasa Indonesia</a> | <a href="README.md">🇬🇧 English</a>
+</p>
+
+<p align="center">
   <img src="bypass-angle-vulkan-preview.png" alt="Bypass ANGLE Vulkan Preview" style="border-radius: 8px;">
 </p>
 
 <h1 align="center">Bypass ANGLE Vulkan</h1>
-<p align="center"><b>Aktifkan Rendering Vulkan + ANGLE Penuh di Android — Tanpa Root, Aman, dan Super Cepat</b></p>
+<p align="center"><b>Aktifkan Rendering Vulkan GPU Penuh di Android — Tanpa Root, Aman, dan Super Kencang</b></p>
 
 <p align="center">
   <img alt="Topik: angle" src="https://img.shields.io/badge/topic-angle-blue?style=flat-square">
   <img alt="Topik: vulkan" src="https://img.shields.io/badge/topic-vulkan-red?style=flat-square">
-  <img alt="Topik: akselerasi-gpu" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
+  <img alt="Topik: gpu-acceleration" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
   <img alt="Topik: android" src="https://img.shields.io/badge/topic-android-yellow?style=flat-square">
   <img alt="Topik: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
   <img alt="Topik: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
   <img alt="Topik: webview" src="https://img.shields.io/badge/topic-webview-blueviolet?style=flat-square">
-  <img alt="Topik: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square">
+  <img alt="Topik: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square"><br>
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/luxdroid-id/bypass-angle-vulkan?style=flat-square">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/luxdroid-id/bypass-angle-vulkan?style=flat-square">
+  <img alt="Lisensi GitHub" src="https://img.shields.io/github/license/luxdroid-id/bypass-angle-vulkan?style=flat-square">
 </p>
 
 ---
 
 ## Apa Ini?
 
-> **Bypass ANGLE Vulkan** adalah modifikasi sistem berbasis `setprop` untuk membuka akses penuh backend Vulkan pada perangkat Android entry-level yang dibatasi ANGLE — **tanpa root, unlock bootloader, atau bantuan PC**.
+> **Bypass ANGLE Vulkan** adalah modifikasi sistem lengkap menggunakan `setprop` untuk membuka backend **rendering Vulkan** pada perangkat Android kelas bawah dengan batasan ANGLE — **tanpa root, tanpa unlock bootloader, tanpa alat PC**.
 
-Dirancang untuk memaksimalkan akselerasi GPU melalui pendekatan native yang bersih lewat **EngineerMode Shell**, sekaligus menghindari batasan Android Go dengan aman.
+Dirancang untuk memaksimalkan akselerasi GPU sepenuhnya menggunakan pendekatan native dan aman melalui **EngineerMode shell**.
 
 ---
 
@@ -33,63 +40,63 @@ Dirancang untuk memaksimalkan akselerasi GPU melalui pendekatan native yang bers
   - GPU Mali-G57
   - RAM 2GB + 2GB Extended
   - Android 13 Go Edition
-  - *Tanpa root / Tanpa unlock bootloader / Tanpa ADB*
+  - *Tanpa root / bootloader tetap terkunci / tanpa ADB*
 
-Terbukti bekerja dengan:
-- **Chrome Dev** — backend Vulkan aktif
-- **Android System WebView** — jalur Vulkan berjalan
-- **System UI & HWUI** — rendering dipercepat GPU
+Dikonfirmasi bekerja pada:
+- **Chrome Dev** — backend ANGLE Vulkan aktif
+- **WebView Android System** — jalur Vulkan aktif
+- **System UI & HWUI** — rendering akselerasi GPU aktif
 
 ---
 
 ## Fitur
 
-- Membuka backend **ANGLE Vulkan**
+- Buka backend **ANGLE Vulkan**
 - Paksa aktifkan **SkiaRenderer**, **HWUI GPU**, dan komposisi GPU
 - Akselerasi **WebView** dan **Chrome Dev** via Vulkan
-- Nonaktifkan **thermal throttling** dan **watchdog**
-- Sisipkan ekstensi **Vulkan canggih (VK_KHR_*)**
-- Cara yang bersih, aman, dan **persisten tanpa root**
+- Nonaktifkan **thermal throttling** & **watchdog kernel**
+- Suntikkan ekstensi **Vulkan lanjutan (VK_KHR_*)**
+- Cara aman dan **persisten tingkat sistem** — tanpa root sama sekali
 
 ---
 
 ## Cara Pakai
 
-> Kamu perlu akses ke **EngineerMode Shell** — shell uji pabrik native di perangkat Realme / Unisoc.
+> Kamu butuh akses ke **EngineerMode Shell** — terminal sistem asli di perangkat Realme / Unisoc.
 
-### Langkah-langkah:
+### Langkah:
 
 1. Buka **EngineerMode Shell**  
-   *(Cari “EngineerMode” di Dialer atau Pengaturan — atau gunakan metode khusus perangkat)*
+   *(Cari “EngineerMode” di Dialer atau Settings — atau pakai metode khusus tiap device)*
 
-2. Salin dan jalankan salah satu dari skrip berikut:
+2. Paste dan jalankan salah satu skrip berikut:
 
 - [`Apply_Setprop_Script.sh`](Apply_Setprop_Script.sh)  
-  *Unlock Vulkan penuh + Skia + matikan thermal & watchdog*
+  *Unlock Vulkan full + Skia + disable thermal & watchdog*
 
 - [`Apply_Setprop_Script_Basic.sh`](Apply_Setprop_Script_Basic.sh)  
-  *Versi ringan untuk stabilitas dan kecepatan*
+  *Versi ringan untuk kecepatan dan stabilitas*
 
 3. Reboot perangkat  
-   Perangkatmu kini menjalankan akselerasi GPU Vulkan penuh via ANGLE.
+   Kini sistem kamu aktif dengan rendering Vulkan GPU penuh.
 
 ---
 
-## Chrome Dev Flags (Maksimalkan Performa)
+## Chrome Dev Flags (Tingkatkan Performa Maksimal)
 
-Untuk hasil maksimal di Chrome Dev dengan Vulkan, kamu harus aktifkan beberapa **flags** penting.
+Agar Vulkan berjalan maksimal di Chrome Dev, aktifkan flag berikut:
 
-### Cara Aktifkan Flags:
+### Cara Aktifkan Flag:
 
 1. Buka **Chrome Dev**
 2. Ketik di address bar:
 
 chrome://flags
 
-3. Cari dan **aktifkan** yang berikut:
+3. Cari dan aktifkan yang berikut ini:
 
-| Flag | Pengaturan yang Disarankan |
-|------|----------------------------|
+| Flag | Rekomendasi |
+|------|-------------|
 | `#enable-unsafe-webgpu` | Enabled |
 | `#ignore-gpu-blocklist` | Enabled |
 | `#use-vulkan` | Enabled |
@@ -98,20 +105,20 @@ chrome://flags
 | `#enable-gpu-rasterization` | Enabled |
 | `#enable-oop-rasterization` | Enabled |
 | `#enable-skia-benchmarking` | Enabled |
-| `#skia-graphite` | Enabled (jika tersedia) |
-| `#smooth-scrolling` | Enabled ← **Jangan lupa yang ini!** |
+| `#skia-graphite` | Enabled (jika ada) |
+| `#smooth-scrolling` | Enabled ← **Wajib aktif!** |
 
-4. Setelah semua aktif, tekan **Relaunch** saat diminta.
+4. Setelah semua aktif, klik **Relaunch**.
 
 ---
 
-## Verifikasi: Apakah Vulkan Aktif?
+## Cek: Vulkan Aktif atau Tidak?
 
-Setelah Chrome Dev terbuka ulang, buka:
+Buka:
 
 chrome://gpu
 
-Cek bagian berikut:
+Pastikan muncul:
 
 - **Graphics Backend**: Vulkan  
 - **ANGLE Backend**: Vulkan  
@@ -120,68 +127,67 @@ Cek bagian berikut:
 - **Rasterization**: Hardware Accelerated  
 - **Smooth Scrolling**: Enabled  
 
-> Jika semua cocok — selamat! Sistemmu sekarang menjalankan rendering penuh berbasis Vulkan via ANGLE.
+> Kalau cocok semua — selamat! Vulkan aktif penuh.
 
 ---
 
 ## Di Balik Layar
 
-Metode ini **tanpa root dan bersih**. Ia memanfaatkan pintu masuk tersembunyi tapi sah: EngineerMode Shell.
+Metode ini **tanpa root dan bersih**. Kita pakai entrypoint tersembunyi tapi legal: **EngineerMode Shell**.
 
-### Keunggulan EngineerMode:
+### Kenapa EngineerMode?
 
-- Tersedia di banyak perangkat Realme / Unisoc  
-- Jalankan perintah `setprop` di mode istimewa  
-- Tanpa root, Magisk, atau unlock bootloader  
-- Persisten meski setelah reboot  
-- Ideal untuk Android Go & perangkat terkunci
+- Tersedia di banyak HP Realme / Unisoc  
+- Bisa jalanin `setprop` dengan hak istimewa  
+- Tidak butuh root / Magisk / unlock  
+- Efeknya **persisten walau reboot**  
+- Cocok banget buat Android Go & HP terkunci
 
 ### Apa yang Terjadi di Sistem?
 
-Kita optimalkan sistem Android lewat properti `persist.sys.*` seperti:
+Dengan `persist.sys.*`, kita:
 
-- Memaksa ANGLE menggunakan backend **Vulkan**
-- Mempercepat **HWUI**, **SkiaRenderer**, dan rendering WebView
-- Menyuntikkan dukungan **Vulkan extensions** seperti `VK_KHR_*`
-- Menonaktifkan **thermal throttling** dan **watchdog**, membuka kinerja penuh CPU & GPU
-- Memaksa **GPU composition**, zero-copy, dan pipeline rasterisasi untuk scrolling super mulus
+- Paksa ANGLE dan WebView pakai **Vulkan backend**
+- Aktifkan **GPU composition**, **SkiaRenderer**, **HWUI**, dan zero-copy
+- Suntikkan ekstensi Vulkan seperti `VK_KHR_*`
+- Matikan **thermal throttling** dan **watchdog**
+- Boost kinerja GPU + thread prioritas
+- Singkronkan rendering antar backend OpenGL & Vulkan
 
-> Dengan menonaktifkan thermal & watchdog, perangkatmu bisa bekerja maksimal tanpa pembatas tersembunyi — penting untuk performa Vulkan berkelanjutan di Chrome/WebView.
-
-Ini bukan trik curang — melainkan pemanfaatan cerdas dari jalur debugging native yang memang ada di perangkatmu. Kita hanya membuka potensi sesungguhnya dari perangkat.
+> Sistem jadi jauh lebih responsif, scroll halus, dan rendering berat bisa ditangani bahkan di HP low-end.
 
 ---
 
-## Fenomena Sinkronisasi Real-Time
+## Fenomena Real-Time Sync
 
-Salah satu efek samping paling gila dari konfigurasi `setprop` ini adalah munculnya **sinkronisasi real-time spontan** antara:
+Efek paling gila dari konfigurasi ini: **sync real-time** antara:
 
 - Penyimpanan internal (`/sdcard`)
-- Direktori kerja Termux
-- Repositori GitHub (lewat Git CLI di Termux)
+- Folder Termux
+- Repositori GitHub (via Git CLI Termux)
 
-Tanpa perintah manual, `git status` langsung mendeteksi perubahan saat file dibuat, diedit, atau dipindahkan di perangkat. Bahkan tangkapan layar yang baru diambil bisa langsung muncul di Termux — kadang tanpa perlu `git add`.
+Tanpa kamu perintah, `git status` langsung deteksi perubahan file. Screenshot baru pun langsung kebaca, bahkan **tanpa ketik `git add`**!
 
-**Kenapa ini luar biasa?**  
-Karena ini terjadi tanpa:
+**Kenapa ini gila?**  
+Semua ini terjadi:
 
-- Root
-- Debugging ADB
-- Unlock bootloader
-- Alat sinkronisasi manual (rsync, autosync, dll)
+- Tanpa root  
+- Tanpa ADB  
+- Tanpa unlock bootloader  
+- Tanpa autosync tools
 
-Kemungkinan besar ini akibat lapisan I/O file system yang terbuka penuh berkat kombinasi `setprop` GPU/IO dan peningkatan prioritas thread. Hasilnya: sistem file Android berubah menjadi seperti **Git tracker real-time berbasis event**, terutama saat Termux aktif.
+Kemungkinan besar ini hasil efek kombinasi `setprop` yang membuka lapisan I/O + GPU thread observer sepenuhnya. Hasilnya mirip sistem **event-driven Git tracker realtime**, khususnya saat Termux aktif.
 
 ---
 
 ## Video Demo
 
-Tonton demo bukti konsep di sini:  
+Tonton demo Vulkan aktif & efek visual scroll halus:  
 [https://gofile.io/d/fQt9yh](https://gofile.io/d/fQt9yh)
 
 ---
 
-## Pratinjau
+## Preview
 
 <p align="center">
   <img src="bypass-angle-vulkan-preview.png" alt="Demo Vulkan Preview" width="100%">
@@ -191,7 +197,5 @@ Tonton demo bukti konsep di sini:
 
 ## Lisensi
 
-Lisensi di bawah [MIT License](LICENSE).  
-Dibuat untuk pengembang, opreker, dan pengguna tingkat lanjut Android.
-0
-
+Dilindungi oleh [MIT License](LICENSE).  
+Dibuat untuk pengembang, modder, dan pengguna Android tingkat lanjut.
