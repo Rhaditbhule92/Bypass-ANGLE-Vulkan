@@ -31,7 +31,6 @@ setprop persist.sys.angle.gpu.capture 0
 setprop persist.sys.game_driver.angle_all_apps true
 setprop persist.sys.graphics.renderer ANGLE
 setprop persist.sys.angle.vulkan true
-setprop persist.sys.angle.feature_overrides_enabled VulkanFromANGLE,VulkanUseD32S8,VulkanUseExplicitSync2,VulkanAsyncCommandBufferSubmission
 setprop persist.sys.angle.feature_overrides_disabled ForceRobustResourceInit,EmulatePrimitiveRestartFixedIndex,ForceInitShaderVariables
 setprop persist.sys.angle.feature.override.enableParallelCompileAndLink true
 setprop persist.sys.angle.feature.override.supportsPipelineCreationFeedback true
@@ -43,6 +42,21 @@ setprop persist.sys.angle.feature.override.supportsNonUniformDescriptorIndexing 
 setprop persist.sys.angle.feature.override.logMemoryReportStats true
 setprop persist.sys.angle.feature.override.dumpShaderSource true
 setprop persist.sys.angle.feature.override.captureFrameTimingEvents true
+setprop persist.sys.gfx.angle.supported 1
+setprop persist.sys.gfx.angle.use_vulkan true
+setprop persist.sys.gfx.angle.default_backend vulkan
+setprop persist.sys.gfx.angle.game_driver_all true
+setprop persist.sys.gfx.angle.gamemode 1
+setprop persist.sys.gfx.angle.gpu.bypass true
+setprop persist.sys.gpu.rendering true
+setprop persist.sys.gpu.favor_performance 1
+setprop persist.sys.vulkan.priority high
+setprop persist.sys.gpu.boost_level max
+setprop persist.sys.gpu.turbo_mode 1
+setprop persist.sys.angle.vulkan.debug_layers false
+setprop persist.sys.angle.vulkan.memory_optimization aggressive
+setprop persist.sys.angle.vulkan.renderloop async
+setprop persist.sys.angle.vulkan.swap_behavior fast
 
 # ANGLE Optimization & Debug
 echo "[2] ANGLE Optimization & Debug"
@@ -59,8 +73,16 @@ setprop persist.sys.angle.enable_validation_layers false
 setprop persist.sys.angle.debug_layer true
 setprop persist.sys.angle.enable_debug_layers true
 
+# ANGLE Vulkan Boost
+echo "[3] ANGLE Vulkan Boost"
+setprop persist.sys.render.driver_angle_enabled true
+setprop persist.sys.gpu.angle.driver.boost 1
+setprop persist.sys.angle.render.direct true
+setprop persist.sys.angle.debug.perf true
+setprop persist.sys.vulkan.angle.compat 1
+
 # ANGLE Extended Activation
-echo "[3] Extended ANGLE Activation"
+echo "[4] Extended ANGLE Activation"
 setprop persist.sys.angle.use_angle true
 setprop persist.sys.angle.override_blacklist true
 setprop persist.sys.angle.features.allow_backend_switching false
@@ -73,26 +95,26 @@ setprop persist.sys.angle.enable_transient_resources true
 setprop persist.sys.angle.enable_async_buffer_queue true
 
 # GPU Composition
-echo "[4] GPU Composition / Rendering"
+echo "[5] GPU Composition / Rendering"
 setprop persist.sys.hwcomposition.force_gpu true
 setprop persist.sys.sf.gpu_compose_delay 0
 setprop persist.sys.gpu.benchmark_mode true
 setprop persist.sys.gpu.low_latency_mode true
 setprop persist.sys.gpu.allow_async_queue true
 setprop persist.sys.gpu.pipeline_cache_enabled true
+setprop persist.sys.force_highendgfx true
+setprop persist.sys.gpu.hardware_overdraw 0
+setprop persist.sys.ui.hw_deferred true
+setprop persist.sys.gpu.pipeline_flush aggressive
+setprop persist.sys.gpu.prefer_async_compilation 1
 
 # HWUI & Skia
-echo "[5] HWUI GPU Optimizations"
+echo "[6] HWUI GPU Optimizations"
 setprop persist.sys.hwui.enabled true
 setprop persist.sys.hwui.force_gpu_rendering true
-setprop debug.hwui.renderer skiagl
-setprop debug.hwui.use_vulkan true
-setprop debug.hwui.disable_vulkan_defer true
-setprop debug.hwui.skia_atrace_enabled false
 setprop persist.sys.skia.renderer enabled
 setprop persist.sys.skia.vulkan enabled
 setprop persist.sys.skia.disable_mtl false
-setprop debug.hwui.overdraw false
 setprop persist.sys.hwui.drop_shadow_cache_size 6
 setprop persist.sys.hwui.texture_cache_size 72
 setprop persist.sys.hwui.layer_cache_size 48
@@ -106,11 +128,13 @@ setprop persist.sys.ui.smooth_scroll true
 setprop persist.sys.ui.rendering_priority balanced
 
 # Thermal
-echo "[6] Disabling Thermal Controls"
+echo "[7] Disabling Thermal Controls"
 setprop persist.sys.thermal.data false
 setprop persist.sys.thermal.config false
 setprop persist.sys.thermal.status disable
 setprop persist.sys.thermal_event false
+setprop persist.sys.gpu.thermal_throttle off
+setprop persist.sys.gpu.dynamic_power_limit off
 setprop persist.sys.ignore_dexopt_thermal true
 setprop persist.sys.dalvik.dexopt.no_throttle true
 setprop persist.sys.dexopt.ignore_thermal true
@@ -119,12 +143,12 @@ setprop persist.sys.cpu.freq.lock true
 setprop persist.sys.dalvik.vm.dex2oat_cpu_set 0,1,2,3,4,5,6,7
 
 # Watchdog
-echo "[7] Disabling System Watchdog"
+echo "[8] Disabling System Watchdog"
 setprop persist.sys.watchdog 0
 setprop persist.sys.watchdog_en 0
 
 # WebView Vulkan
-echo "[8] WebView Vulkan + GPU Raster"
+echo "[9] WebView Vulkan + GPU Raster"
 setprop persist.sys.webgl2.force_enabled true
 setprop persist.sys.webgpu.enabled true
 setprop persist.sys.webgpu.backend vulkan
@@ -144,9 +168,24 @@ setprop persist.sys.webview.render_process_limit 4
 setprop persist.sys.webview.disable_overlays false
 setprop persist.sys.webview.enable-features "Vulkan,WebGPU,WebGL2ComputeContext,SharedArrayBuffer,UseSkiaRenderer,UseWebGPU"
 setprop persist.sys.webview.disable-features "AndroidSurfaceControl"
+setprop persist.sys.webview.gpu_acceleration true
+setprop persist.sys.chrome.angle_backend vulkan
+
+# Additional Rendering Enhancer (Optional)
+echo "[10] Additional Rendering Enhancher (Opsional)"
+setprop persist.sys.gfx.low_latency true
+setprop persist.sys.gfx.force_gpu true
+setprop persist.sys.gfx.render_mode performance
+setprop persist.sys.hwui.force_vulkan true
+setprop persist.sys.hwui.render_thread true
+setprop persist.sys.sf.enable_gl_backpressure 1
+setprop persist.sys.sf.latch_unsignaled 1
+setprop persist.sys.sf.use_phase_offsets_as_durations 1
+setprop persist.sys.sf.phase_offset_ns 750000
+setprop persist.sys.sf.present_time_offset_from_vsync_ns 1500000
 
 # WebView Boost
-echo "[9] WebView Boost + Bypass"
+echo "[11] WebView Boost + Bypass"
 setprop persist.sys.webview.multi_thread true
 setprop persist.sys.webview.optimized_rendering true
 setprop persist.sys.webview.enable_async_paint true
@@ -156,7 +195,7 @@ setprop persist.sys.webview.debug.enable true
 setprop persist.sys.webview.debug.level verbose
 
 # Vulkan Extensions
-echo "[10] Enabling Vulkan Extensions"
+echo "[12] Enabling Vulkan Extensions"
 setprop persist.sys.vulkan.dynamic_rendering 1
 setprop persist.sys.vulkan.enable_dynamic_rendering 1
 setprop persist.sys.vulkan.enable_pipeline_library 1
@@ -176,7 +215,7 @@ setprop persist.sys.vulkan.api_version 1.3
 setprop persist.sys.vulkan.support true
 
 # Final Tweaks
-echo "[11] Final UI & Performance Tweaks"
+echo "[13] Final UI & Performance Tweaks"
 setprop persist.sys.hwui.use_vulkan true
 setprop persist.sys.sf.color_saturation 1.0
 setprop persist.sys.skia.use_dmsaa_for_tiles true
@@ -186,7 +225,7 @@ setprop persist.sys.sf.low_latency_vsync true
 setprop persist.sys.chrome.raster.threads 4
 
 # CPU & Network
-echo "[12] CPU + Network Optimization"
+echo "[14] CPU + Network Optimization"
 setprop persist.sys.cpufreq.max 2500000
 setprop persist.sys.cpufreq.min 1200000
 setprop persist.sys.cpufreq.capacity 1200
@@ -196,7 +235,7 @@ setprop persist.sys.enable_scheduler_boost 1
 setprop persist.sys.cpu_boost 1
 
 # LTE Radio
-echo "[13] Network / LTE Tweaks"
+echo "[15] Network / LTE Tweaks"
 setprop persist.radio.data_con_type lte
 setprop persist.radio.force_lte_only true
 setprop persist.sys.radio.ims_volte true
@@ -212,7 +251,7 @@ setprop persist.radio.prefer.network 9
 setprop persist.vendor.radio.prefer.network 9
 
 # Logging Cleanup
-echo "[14] Logging & Kernel Cleanup"
+echo "[16] Logging & Kernel Cleanup"
 setprop persist.sys.pwrd_log false
 setprop persist.log.tag "*:S"
 setprop persist.sys.powerhal.log.enabled 0

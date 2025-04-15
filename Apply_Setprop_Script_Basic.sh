@@ -1,4 +1,3 @@
-
 #!/system/bin/sh
 
 # ANGLE Vulkan Core & Backend
@@ -26,9 +25,7 @@ setprop persist.sys.angle.gpu.capture 0
 setprop persist.sys.game_driver.angle_all_apps true
 setprop persist.sys.graphics.renderer ANGLE
 setprop persist.sys.angle.vulkan true
-setprop persist.sys.angle.feature_overrides_enabled VulkanFromANGLE,VulkanUseD32S8,VulkanUseExplicitSync2,VulkanAsyncCommandBufferSubmission
 setprop persist.sys.angle.feature_overrides_disabled ForceRobustResourceInit,EmulatePrimitiveRestartFixedIndex,ForceInitShaderVariables
-setprop persist.sys.angle.feature.override.force_enable_all true
 setprop persist.sys.angle.feature.override.enableParallelCompileAndLink true
 setprop persist.sys.angle.feature.override.supportsPipelineCreationFeedback true
 setprop persist.sys.angle.feature.override.allowMultipleLinearSamplerTypes true
@@ -39,6 +36,28 @@ setprop persist.sys.angle.feature.override.supportsNonUniformDescriptorIndexing 
 setprop persist.sys.angle.feature.override.logMemoryReportStats true
 setprop persist.sys.angle.feature.override.dumpShaderSource true
 setprop persist.sys.angle.feature.override.captureFrameTimingEvents true
+setprop persist.sys.gfx.angle.supported 1
+setprop persist.sys.gfx.angle.use_vulkan true
+setprop persist.sys.gfx.angle.default_backend vulkan
+setprop persist.sys.gfx.angle.game_driver_all true
+setprop persist.sys.gfx.angle.gamemode 1
+setprop persist.sys.gfx.angle.gpu.bypass true
+setprop persist.sys.gpu.rendering true
+setprop persist.sys.gpu.favor_performance 1
+setprop persist.sys.vulkan.priority high
+setprop persist.sys.gpu.boost_level max
+setprop persist.sys.gpu.turbo_mode 1
+setprop persist.sys.angle.vulkan.debug_layers false
+setprop persist.sys.angle.vulkan.memory_optimization aggressive
+setprop persist.sys.angle.vulkan.renderloop async
+setprop persist.sys.angle.vulkan.swap_behavior fast
+
+# ANGLE Vulkan Boost
+setprop persist.sys.render.driver_angle_enabled true
+setprop persist.sys.gpu.angle.driver.boost 1
+setprop persist.sys.angle.render.direct true
+setprop persist.sys.angle.debug.perf true
+setprop persist.sys.vulkan.angle.compat 1
 
 # ANGLE Optimization & Debug
 setprop persist.sys.angle.enable_backpressure true
@@ -73,18 +92,18 @@ setprop persist.sys.gpu.benchmark_mode true
 setprop persist.sys.gpu.low_latency_mode true
 setprop persist.sys.gpu.allow_async_queue true
 setprop persist.sys.gpu.pipeline_cache_enabled true
+setprop persist.sys.force_highendgfx true
+setprop persist.sys.gpu.hardware_overdraw 0
+setprop persist.sys.ui.hw_deferred true
+setprop persist.sys.gpu.pipeline_flush aggressive
+setprop persist.sys.gpu.prefer_async_compilation 1
 
 # HWUI & Skia
 setprop persist.sys.hwui.enabled true
 setprop persist.sys.hwui.force_gpu_rendering true
-setprop debug.hwui.renderer skiagl
-setprop debug.hwui.use_vulkan true
-setprop debug.hwui.disable_vulkan_defer true
-setprop debug.hwui.skia_atrace_enabled false
 setprop persist.sys.skia.renderer enabled
 setprop persist.sys.skia.vulkan enabled
 setprop persist.sys.skia.disable_mtl false
-setprop debug.hwui.overdraw false
 setprop persist.sys.hwui.drop_shadow_cache_size 6
 setprop persist.sys.hwui.texture_cache_size 72
 setprop persist.sys.hwui.layer_cache_size 48
@@ -102,6 +121,8 @@ setprop persist.sys.thermal.data false
 setprop persist.sys.thermal.config false
 setprop persist.sys.thermal.status disable
 setprop persist.sys.thermal_event false
+setprop persist.sys.gpu.thermal_throttle off
+setprop persist.sys.gpu.dynamic_power_limit off
 setprop persist.sys.ignore_dexopt_thermal true
 setprop persist.sys.dalvik.dexopt.no_throttle true
 setprop persist.sys.dexopt.ignore_thermal true
@@ -133,6 +154,20 @@ setprop persist.sys.webview.render_process_limit 4
 setprop persist.sys.webview.disable_overlays false
 setprop persist.sys.webview.enable-features "Vulkan,WebGPU,WebGL2ComputeContext,SharedArrayBuffer,UseSkiaRenderer,UseWebGPU"
 setprop persist.sys.webview.disable-features "AndroidSurfaceControl"
+setprop persist.sys.webview.gpu_acceleration true
+setprop persist.sys.chrome.angle_backend vulkan
+
+# Additional Rendering Enhancer (Optional)
+setprop persist.sys.gfx.low_latency true
+setprop persist.sys.gfx.force_gpu true
+setprop persist.sys.gfx.render_mode performance
+setprop persist.sys.hwui.force_vulkan true
+setprop persist.sys.hwui.render_thread true
+setprop persist.sys.sf.enable_gl_backpressure 1
+setprop persist.sys.sf.latch_unsignaled 1
+setprop persist.sys.sf.use_phase_offsets_as_durations 1
+setprop persist.sys.sf.phase_offset_ns 750000
+setprop persist.sys.sf.present_time_offset_from_vsync_ns 1500000
 
 # WebView Boost
 setprop persist.sys.webview.multi_thread true
