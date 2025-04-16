@@ -182,8 +182,10 @@ Kemungkinan besar ini hasil efek kombinasi `setprop` yang membuka lapisan I/O + 
 
 ## Video Demo
 
-Tonton demo Vulkan aktif & efek visual scroll halus:  
-[https://gofile.io/d/fQt9yh](https://gofile.io/d/fQt9yh)
+# Bypass ANGLE Vulkan (Tanpa Root)
+
+**[Tonton Video Tutorial di Sini](https://youtu.be/_MLwruUpo30?si=q0bYUX3qDwoYLsuj)**  
+_Panduan lengkap mengaktifkan skrip melalui ADB Shell di dalam EngineerMode tanpa root._
 
 ---
 

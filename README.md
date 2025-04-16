@@ -208,8 +208,10 @@ The behavior is most likely the result of file I/O observation layers being full
 
 ## Demo Video
 
-You can watch the proof-of-concept demo here:  
-[https://gofile.io/d/fQt9yh](https://gofile.io/d/fQt9yh)
+# Bypass ANGLE Vulkan (No Root)
+
+**[Watch Video Tutorial Here](https://youtu.be/_MLwruUpo30?si=f0vOu0P7hjiO6COD)**  
+_A full guide to activate the script via ADB Shell inside EngineerMode without root._
 
 ---
 
