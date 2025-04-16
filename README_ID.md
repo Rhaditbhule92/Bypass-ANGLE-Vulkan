@@ -180,8 +180,6 @@ Kemungkinan besar ini hasil efek kombinasi `setprop` yang membuka lapisan I/O + 
 
 ---
 
-## Video Demo
-
 # Bypass ANGLE Vulkan (Tanpa Root)
 
 **[Tonton Video Tutorial di Sini](https://youtu.be/_MLwruUpo30?si=q0bYUX3qDwoYLsuj)**  

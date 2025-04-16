@@ -206,8 +206,6 @@ The behavior is most likely the result of file I/O observation layers being full
 
 ---
 
-## Demo Video
-
 # Bypass ANGLE Vulkan (No Root)
 
 **[Watch Video Tutorial Here](https://youtu.be/_MLwruUpo30?si=f0vOu0P7hjiO6COD)**  
