@@ -10,17 +10,19 @@
 <p align="center"><b>Aktifkan Rendering Vulkan GPU Penuh di Android — Tanpa Root, Aman, dan Super Kencang</b></p>
 
 <p align="center">
-  <img alt="Topik: angle" src="https://img.shields.io/badge/topic-angle-blue?style=flat-square">
-  <img alt="Topik: vulkan" src="https://img.shields.io/badge/topic-vulkan-red?style=flat-square">
-  <img alt="Topik: gpu-acceleration" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
-  <img alt="Topik: android" src="https://img.shields.io/badge/topic-android-yellow?style=flat-square">
-  <img alt="Topik: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
-  <img alt="Topik: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
-  <img alt="Topik: webview" src="https://img.shields.io/badge/topic-webview-blueviolet?style=flat-square">
-  <img alt="Topik: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square"><br>
+  <img alt="Topic: angle" src="https://img.shields.io/badge/topic-angle-blue?style=flat-square">
+  <img alt="Topic: vulkan" src="https://img.shields.io/badge/topic-vulkan-red?style=flat-square">
+  <img alt="Topic: gpu-acceleration" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
+  <img alt="Topic: android" src="https://img.shields.io/badge/topic-android-yellow?style=flat-square">
+  <img alt="Topic: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
+  <img alt="Topic: script" src="https://img.shields.io/badge/topic-script-blue?style=flat-square">
+  <img alt="Topic: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
+  <img alt="Topic: unisoc" src="https://img.shields.io/badge/topic-unisoc-red?style=flat-square">
+  <img alt="Topic: webview-android" src="https://img.shields.io/badge/topic-webview--android-blueviolet?style=flat-square">
+  <img alt="Topic: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square"><br>
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/luxdroid-id/bypass-angle-vulkan?style=flat-square">
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/luxdroid-id/bypass-angle-vulkan?style=flat-square">
-  <img alt="Lisensi GitHub" src="https://img.shields.io/github/license/luxdroid-id/bypass-angle-vulkan?style=flat-square">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/luxdroid-id/bypass-angle-vulkan?style=flat-square">
 </p>
 
 ---

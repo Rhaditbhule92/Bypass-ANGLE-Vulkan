@@ -15,8 +15,10 @@
   <img alt="Topic: gpu-acceleration" src="https://img.shields.io/badge/topic-GPU--acceleration-green?style=flat-square">
   <img alt="Topic: android" src="https://img.shields.io/badge/topic-android-yellow?style=flat-square">
   <img alt="Topic: setprop" src="https://img.shields.io/badge/topic-setprop-lightgrey?style=flat-square">
+  <img alt="Topic: script" src="https://img.shields.io/badge/topic-script-blue?style=flat-square">
   <img alt="Topic: realme" src="https://img.shields.io/badge/topic-realme-orange?style=flat-square">
-  <img alt="Topic: webview" src="https://img.shields.io/badge/topic-webview-blueviolet?style=flat-square">
+  <img alt="Topic: unisoc" src="https://img.shields.io/badge/topic-unisoc-red?style=flat-square">
+  <img alt="Topic: webview-android" src="https://img.shields.io/badge/topic-webview--android-blueviolet?style=flat-square">
   <img alt="Topic: chrome" src="https://img.shields.io/badge/topic-chrome-silver?style=flat-square"><br>
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/luxdroid-id/bypass-angle-vulkan?style=flat-square">
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/luxdroid-id/bypass-angle-vulkan?style=flat-square">
