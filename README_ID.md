@@ -62,6 +62,22 @@ Dikonfirmasi bekerja pada:
 
 ---
 
+## Bonus: Poweramp Equalizer + AudioFX Vulkan
+
+Skrip ini juga mencakup tambahan konfigurasi audio untuk sinkronisasi EQ secara real-time dan pemutaran audio dengan latensi rendah.
+
+### Fitur:
+- **Poweramp Equalizer** tersinkronisasi dengan semua aplikasi media tanpa memerlukan izin DUMP atau debugging ADB.
+- Efek audio sistem (Bass Boost, Reverb, dll.) berfungsi dengan mulus.
+- Latensi audio yang sangat rendah — hampir tanpa lag.
+- Kompatibel dengan **AudioFX**, **Playback Capture**, dan mode **Deep Buffer**.
+- Dukungan efek audio berbasis Vulkan untuk kejelasan dan pemrosesan spasial yang lebih baik.
+
+Fitur-fitur ini secara otomatis diaktifkan melalui properti `persist.sys.*` dalam skrip `.sh`.
+Tidak ada konfigurasi manual yang diperlukan — cukup jalankan skrip dan reboot.
+
+---
+
 ## Cara Pakai
 
 > Kamu butuh akses ke **EngineerMode Shell** — terminal sistem asli di perangkat Realme / Unisoc.

@@ -62,6 +62,22 @@ Confirmed working with:
 
 ---
 
+## Bonus: Poweramp Equalizer + AudioFX Vulkan
+
+This script also includes a bonus audio configuration tweak for real-time EQ sync and low-latency playback.
+
+### Features:
+- **Poweramp Equalizer** syncs with all media apps without requiring DUMP permission or ADB debugging.
+- System-wide audio effects (Bass Boost, Reverb, etc.) work seamlessly.
+- Significantly reduced audio latency — almost zero lag.
+- Compatible with **AudioFX**, **Playback Capture**, and **Deep Buffer** modes.
+- Vulkan-based audio effect support for better clarity and spatial processing.
+
+These features are automatically enabled via `persist.sys.*` properties in the `.sh` script.
+No manual configuration is required — just apply the script and reboot.
+
+---
+
 ## How to Use
 
 > You’ll need access to **EngineerMode Shell** — a native factory test shell on Realme / Unisoc devices.
