@@ -299,6 +299,12 @@ setprop persist.sys.log.audio 1
 setprop persist.sys.media.use-awesome true
 setprop persist.sys.media.session.monitor true
 setprop persist.sys.poweramp.compatmode true
+setprop persist.sys.audiofx.global 1
+setprop persist.sys.media.use-awesome 1
+setprop persist.sys.audio.flinger.enable true
+setprop persist.sys.audio.offload.gapless.enabled true
+setprop persist.sys.audio.effect.vulkan true
+setprop persist.sys.angle.audio.quality high
 
 # DONE
 echo "============================================="
