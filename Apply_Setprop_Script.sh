@@ -126,6 +126,7 @@ setprop persist.sys.render.threaded true
 setprop persist.sys.render.gpu true
 setprop persist.sys.ui.smooth_scroll true
 setprop persist.sys.ui.rendering_priority balanced
+setprop persist.sys.ui.hwdebug false
 
 # Thermal
 echo "[7] Disabling Thermal Controls"
@@ -146,6 +147,10 @@ setprop persist.sys.dalvik.vm.dex2oat_cpu_set 0,1,2,3,4,5,6,7
 echo "[8] Disabling System Watchdog"
 setprop persist.sys.watchdog 0
 setprop persist.sys.watchdog_en 0
+setprop persist.sys.watchdog.enable 0
+setprop persist.sys.watchdog.timer 0
+setprop persist.sys.kernel.watchdog 0
+setprop persist.sys.thermal.watchdog 0
 
 # WebView Vulkan
 echo "[9] WebView Vulkan + GPU Raster"
