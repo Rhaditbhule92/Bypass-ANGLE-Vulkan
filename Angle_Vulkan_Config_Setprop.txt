@@ -255,3 +255,20 @@ setprop persist.sys.debug.level 0
 setprop persist.sys.zram.size 268435456
 setprop persist.sys.zram.disk_size 268435456
 setprop persist.sys.bionic.reserved_cpu 1
+
+# AudioFX_Compatibility
+setprop persist.sys.audio.session.strict true
+setprop persist.sys.audio.deepbuffer.media true
+setprop persist.sys.audio.force_tracking true
+setprop persist.sys.audio.playback.capture true
+setprop persist.sys.audio.fx.enable true
+setprop persist.sys.audio.fx.use_vendor true
+setprop persist.sys.audio.prefer.deepbuffer true
+setprop persist.sys.audio.feature.audioeffect true
+setprop persist.sys.permission.spoof.dump true
+setprop persist.sys.dumppoweramp.enable true
+setprop persist.sys.audio.permission.grant.dump true
+setprop persist.sys.log.audio 1
+setprop persist.sys.media.use-awesome true
+setprop persist.sys.media.session.monitor true
+setprop persist.sys.poweramp.compatmode true
