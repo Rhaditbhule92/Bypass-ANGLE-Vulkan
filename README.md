@@ -124,6 +124,16 @@ This repository also includes optional support for Poweramp Equalizer without re
 
 ---
 
+## Download Mirror (Google Drive)
+
+If you prefer a direct download or backup mirror, you can access the full ZIP package via Google Drive:
+
+**[Bypass-ANGLE-Vulkan (ZIP Package) – Google Drive](https://drive.google.com/drive/folders/16E67hGsOTOWVwD9ABQa1OzUMIEb5ViMR)**
+
+> This includes all scripts, APKs, and preset config files in one convenient archive.
+
+---
+
 ## Chrome Dev Flags (Maximize Performance)
 
 To take full advantage of Vulkan in Chrome Dev, you must enable specific **flags**.  
