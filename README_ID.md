@@ -86,6 +86,22 @@ Hal ini sepenuhnya dimungkinkan berkat properti `persist.sys.*` terkait audio ya
 
 ---
 
+## Poweramp Equalizer (Opsional Tambahan)
+
+Repositori ini juga menyertakan dukungan opsional untuk Poweramp Equalizer tanpa memerlukan izin DUMP atau akses root.
+
+### Unduhan:
+
+- [PoweRamp.apk](./PoweRamp/PoweRamp.apk) – Versi penuh Poweramp (opsional)
+- [PoweRamp Equalizer.apk](./PoweRamp/PoweRamp%20Equalizer.apk) – Equalizer mandiri
+- [PoweRamp+PresetEqualizer-Settings](./PoweRamp/PoweRamp+PresetEqualizer-Settings) – Konfigurasi preset (untuk aplikasi utama)
+- [PoweRampEqualizer+PresetEqualizer-Settings](./PoweRamp/PoweRampEqualizer+PresetEqualizer-Settings) – Konfigurasi preset (untuk Equalizer mandiri)
+
+> Cukup instal APK-nya dan tempatkan file pengaturan di penyimpanan internal.  
+> Lalu, buka aplikasi Poweramp Equalizer dan impor preset melalui **Pengaturan > Equalizer > Impor**.
+
+---
+
 ## Cara Pakai
 
 > Kamu butuh akses ke **EngineerMode Shell** — terminal sistem asli di perangkat Realme / Unisoc.

@@ -86,6 +86,22 @@ This is made possible entirely through the `persist.sys.*` audio properties incl
 
 ---
 
+## Poweramp Equalizer (Optional Add-on)
+
+This repository also includes optional support for Poweramp Equalizer without requiring DUMP permission or root access.
+
+### Downloads:
+
+- [Poweramp.apk](./PoweRamp/PoweRamp.apk) – Full version of Poweramp (optional)
+- [Poweramp Equalizer.apk](./PoweRamp/PoweRamp%20Equalizer.apk) – Standalone Equalizer
+- [Poweramp+PresetEqualizer-Settings](./PoweRamp/PoweRamp+PresetEqualizer-Settings) – Preset config (for default app)
+- [PowerampEqualizer+PresetEqualizer-Settings](./PoweRamp/PoweRampEqualizer+PresetEqualizer-Settings) – Preset config (for standalone Equalizer)
+
+> Install the APKs and place the settings files in your internal storage.  
+> Then, open the Poweramp Equalizer app and import the preset via **Settings > Equalizer > Import**.
+
+---
+
 ## How to Use
 
 > You’ll need access to **EngineerMode Shell** — a native factory test shell on Realme / Unisoc devices.
