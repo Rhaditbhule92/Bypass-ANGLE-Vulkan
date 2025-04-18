@@ -208,7 +208,7 @@ Kemungkinan besar ini hasil efek kombinasi `setprop` yang membuka lapisan I/O + 
 
 # Bypass ANGLE Vulkan (Tanpa Root)
 
-**[Tonton Video Tutorial di Sini](https://youtu.be/_MLwruUpo30?si=q0bYUX3qDwoYLsuj)**  
+**[Tonton Video Tutorial di Sini](https://youtu.be/chR2xlZGJ0w?si=LYbdYXEKkzrWKqoL)**  
 _Panduan lengkap mengaktifkan skrip melalui ADB Shell di dalam EngineerMode tanpa root._
 
 ---

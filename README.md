@@ -234,7 +234,7 @@ The behavior is most likely the result of file I/O observation layers being full
 
 # Bypass ANGLE Vulkan (No Root)
 
-**[Watch Video Tutorial Here](https://youtu.be/_MLwruUpo30?si=f0vOu0P7hjiO6COD)**  
+**[Watch Video Tutorial Here](https://youtu.be/chR2xlZGJ0w?si=LYbdYXEKkzrWKqoL)**  
 _A full guide to activate the script via ADB Shell inside EngineerMode without root._
 
 ---
