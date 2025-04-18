@@ -31,9 +31,9 @@ setprop persist.sys.angle.feature.override.deferFlushUntilEndRenderPass true
 setprop persist.sys.angle.feature.override.emulateCopyTexImage2DFromRenderbuffer true
 setprop persist.sys.angle.feature.override.enableGraphicsPipelineLibrary true
 setprop persist.sys.angle.feature.override.supportsNonUniformDescriptorIndexing true
-setprop persist.sys.angle.feature.override.logMemoryReportStats true
-setprop persist.sys.angle.feature.override.dumpShaderSource true
-setprop persist.sys.angle.feature.override.captureFrameTimingEvents true
+setprop persist.sys.angle.feature.override.logMemoryReportStats false
+setprop persist.sys.angle.feature.override.dumpShaderSource false
+setprop persist.sys.angle.feature.override.captureFrameTimingEvents false
 setprop persist.sys.gfx.angle.supported 1
 setprop persist.sys.gfx.angle.use_vulkan true
 setprop persist.sys.gfx.angle.default_backend vulkan
@@ -51,14 +51,14 @@ setprop persist.sys.angle.vulkan.renderloop async
 setprop persist.sys.angle.vulkan.swap_behavior fast
 
 # ANGLE Optimization & Debug
-setprop persist.sys.angle.enable_backpressure true
-setprop persist.sys.angle.enable_perf_monitoring true
-setprop persist.sys.angle.angle_feature_overrides_enabled true
-setprop persist.sys.angle.force_angle true
-setprop persist.sys.angle.enable_gpu_trace true
+setprop persist.sys.angle.enable_backpressure false
+setprop persist.sys.angle.enable_perf_monitoring false
+setprop persist.sys.angle.angle_feature_overrides_enabled false
+setprop persist.sys.angle.force_angle false
+setprop persist.sys.angle.enable_gpu_trace false
 setprop persist.sys.angle.verbose_validation false
-setprop persist.sys.angle.profiling_enabled true
-setprop persist.sys.angle.benchmark_mode true
+setprop persist.sys.angle.profiling_enabled false
+setprop persist.sys.angle.benchmark_mode false
 setprop persist.sys.angle.enable_validation false
 setprop persist.sys.angle.enable_validation_layers false
 setprop persist.sys.angle.debug_layer false
@@ -283,3 +283,5 @@ setprop persist.sys.audio.flinger.enable true
 setprop persist.sys.audio.offload.gapless.enabled true
 setprop persist.sys.audio.effect.vulkan true
 setprop persist.sys.angle.audio.quality high
+setprop persist.sys.appops.override.dump com.maxmpz.equalizer
+setprop persist.sys.permissions.dump true
