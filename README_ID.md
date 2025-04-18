@@ -64,17 +64,25 @@ Dikonfirmasi bekerja pada:
 
 ## Bonus: Poweramp Equalizer + AudioFX Vulkan
 
-Skrip ini juga mencakup tambahan konfigurasi audio untuk sinkronisasi EQ secara real-time dan pemutaran audio dengan latensi rendah.
+Skrip ini juga mencakup pengaturan tambahan untuk konfigurasi audio, guna menyinkronkan EQ secara real-time dan menghadirkan pemutaran audio dengan latensi sangat rendah.
 
 ### Fitur:
-- **Poweramp Equalizer** tersinkronisasi dengan semua aplikasi media tanpa memerlukan izin DUMP atau debugging ADB.
-- Efek audio sistem (Bass Boost, Reverb, dll.) berfungsi dengan mulus.
-- Latensi audio yang sangat rendah — hampir tanpa lag.
-- Kompatibel dengan **AudioFX**, **Playback Capture**, dan mode **Deep Buffer**.
-- Dukungan efek audio berbasis Vulkan untuk kejelasan dan pemrosesan spasial yang lebih baik.
+- **Poweramp Equalizer** dapat tersinkronisasi dengan semua aplikasi media tanpa memerlukan izin DUMP atau debugging ADB.
+- Efek audio sistem (seperti Bass Boost, Reverb, dll.) berjalan mulus di seluruh sistem.
+- Latensi audio yang sangat rendah — nyaris tanpa delay.
+- Kompatibel dengan mode **AudioFX**, **Playback Capture**, dan **Deep Buffer**.
+- Mendukung efek audio berbasis Vulkan untuk kejernihan dan pemrosesan spasial yang lebih baik.
 
-Fitur-fitur ini secara otomatis diaktifkan melalui properti `persist.sys.*` dalam skrip `.sh`.
-Tidak ada konfigurasi manual yang diperlukan — cukup jalankan skrip dan reboot.
+Semua fitur ini diaktifkan secara otomatis melalui properti `persist.sys.*` dalam skrip `.sh`.  
+Tidak perlu pengaturan manual — cukup jalankan skrip dan reboot perangkat.
+
+### Screenshot: Sinkronisasi Poweramp Equalizer Tanpa Izin DUMP
+
+Gambar di bawah ini menunjukkan bahwa **Poweramp Equalizer** berhasil mendeteksi dan tersinkronisasi dengan pemutar media pihak ketiga seperti **VLC**, **MX Player**, dan **AIMP**, *tanpa* memerlukan izin DUMP.
+
+Hal ini sepenuhnya dimungkinkan berkat properti `persist.sys.*` terkait audio yang sudah termasuk dalam skrip `.sh`:
+
+![Equalizer Poweramp Tanpa Izin DUMP](Poweramp_Equalizer_NoDump_Notification_Tracking.png)
 
 ---
 

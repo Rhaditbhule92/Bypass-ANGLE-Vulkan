@@ -73,8 +73,16 @@ This script also includes a bonus audio configuration tweak for real-time EQ syn
 - Compatible with **AudioFX**, **Playback Capture**, and **Deep Buffer** modes.
 - Vulkan-based audio effect support for better clarity and spatial processing.
 
-These features are automatically enabled via `persist.sys.*` properties in the `.sh` script.
+These features are automatically enabled via `persist.sys.*` properties in the `.sh` script.  
 No manual configuration is required — just apply the script and reboot.
+
+### Screenshot: Poweramp Equalizer Sync Without DUMP Permission
+
+The screenshot below demonstrates that **Poweramp Equalizer** can successfully detect and sync with third-party media players such as **VLC**, **YouTube Music**, and **AIMP**, *without* needing DUMP permission.
+
+This is made possible entirely through the `persist.sys.*` audio properties included in the `.sh` script:
+
+![Poweramp Equalizer Without DUMP Permission](Poweramp_Equalizer_NoDump_Notification_Tracking.png)
 
 ---
 
