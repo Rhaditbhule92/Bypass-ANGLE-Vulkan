@@ -124,6 +124,21 @@ This repository also includes optional support for Poweramp Equalizer without re
 
 ---
 
+## Access System EngineerMode and Android System WebView
+
+To gain access to **System EngineerMode** and **Android System WebView**, you can use the **Activity Launcher** app. This app allows you to open hidden activities on your Android device, including **EngineerMode** and **WebView**.
+
+You can get the **Activity Launcher** app by:
+
+- **Download the APK directly from this repo** by clicking [Activity Launcher APK](./Activity%20Launcher.apk).
+- **Or, download the app from the Google Play Store** using [this link](https://play.google.com/store/apps/details?id=de.szalkowski.activitylauncher).
+
+Once the app is installed, open **Activity Launcher**, and search for the activity you want to access, such as **EngineerMode** or **Android System WebView**.
+
+With **Activity Launcher**, you can access various hidden features that are usually not visible on the standard Android user interface.
+
+---
+
 ## Download Mirror (Google Drive)
 
 If you prefer a direct download or backup mirror, you can access the full ZIP package via Google Drive:
