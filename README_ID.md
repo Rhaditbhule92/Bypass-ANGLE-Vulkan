@@ -247,6 +247,12 @@ _Panduan lengkap mengaktifkan skrip melalui ADB Shell di dalam EngineerMode tanp
 
 ---
 
+> **Rilis Resmi di XDA Forums**  
+> Proyek ini telah dipublikasikan secara resmi di XDA Developers:  
+> [**Bypass ANGLE Vulkan – Full GPU Rendering untuk Android Go (Tanpa Root!)**](https://xdaforums.com/t/bypass-angle-vulkan.4731370/)
+
+---
+
 ## Lisensi
 
 Dilindungi oleh [MIT License](LICENSE).  

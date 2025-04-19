@@ -273,6 +273,12 @@ _A full guide to activate the script via ADB Shell inside EngineerMode without r
 
 ---
 
+> **Official Release on XDA Forums**  
+> This project has been officially published on XDA Developers:  
+> [**Bypass ANGLE Vulkan – Full GPU Rendering for Android Go (No Root!)**](https://xdaforums.com/t/bypass-angle-vulkan.4731370/)
+
+---
+
 ## License
 
 Licensed under the [MIT License](LICENSE).  
