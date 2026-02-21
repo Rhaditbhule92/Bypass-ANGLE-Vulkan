@@ -1,0 +1,82 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(90deg, #8e0e00, #1f1c18);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.lang-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.lang-buttons a {
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  background: #2e2e2e;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-buttons a:hover {
+  background: #8e0e00;
+}
+
+.visit-xda {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.visit-xda a {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  background: #8e0e00;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.visit-xda a:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #1c1c1c;
+  color: #888;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid #333;
+}
